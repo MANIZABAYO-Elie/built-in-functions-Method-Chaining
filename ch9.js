@@ -5,5 +5,5 @@
 //"name: Alice":
 
 const person = { name: "Alice", age: 30, city: "Kigali" };
-const personDetails = Object.fromEntries(Object.entries(person).map(([key, value]) => [key, typeof value === "number"]))
-console.log(personDetails)
+const personProperties = Object.entries(person).map(([key, value]) => `${key}:${value}`)
+console.log(personProperties)
