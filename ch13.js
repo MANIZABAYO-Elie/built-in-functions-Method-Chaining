@@ -9,5 +9,5 @@
     { name:"Doe"},
     
 ]
-const transformedUsers= users.map(user=>({...user,isActive:"true"}) )
-console.log(transformedUsers)
+const modifiedUsers= users.map(user=>({...user,isActive:"true"}) )
+console.log(modifiedUsers)
