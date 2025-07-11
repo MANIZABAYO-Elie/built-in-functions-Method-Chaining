@@ -3,7 +3,7 @@
 // and return the updated array:
 
 const prices = [100, 59.99, 200, 20.5];
-const taxedPrices = prices.map(price => (price + (price * 0.1)).toFixed(2))
-                           .map(price=>Number(price))
+const taxedPrices = prices.map(price => Number((price + (price * 0.1)).toFixed(2)))
+                           //.map(price=>Number(price))
 console.log(taxedPrices)
 
